@@ -38,13 +38,13 @@ main.ts
 
 ## ⚙️ CLI Commands Penting
 
-| Perintah | Fungsi | Hasil |
-|---------|--------|-------|
-| `nest g module users` | Buat module | `users/users.module.ts` |
-| `nest g controller users` | Buat controller | `users/users.controller.ts` |
-| `nest g service users` | Buat service | `users/users.service.ts` |
-| `nest g class utils/logger` | Buat class | `utils/logger.ts` |
-| `nest g interface users/user` | Buat interface | `users/interfaces/user.interface.ts` |
+| Perintah                      | Fungsi          | Hasil                                |
+| ----------------------------- | --------------- | ------------------------------------ |
+| `nest g module users`         | Buat module     | `users/users.module.ts`              |
+| `nest g controller users`     | Buat controller | `users/users.controller.ts`          |
+| `nest g service users`        | Buat service    | `users/users.service.ts`             |
+| `nest g class utils/logger`   | Buat class      | `utils/logger.ts`                    |
+| `nest g interface users/user` | Buat interface  | `users/interfaces/user.interface.ts` |
 
 > Gunakan `--flat` jika tidak ingin CLI membuat folder.
 
@@ -72,7 +72,7 @@ src/
 - **Controller**: Tempat menerima request dari user (GET, POST, dll)
 - **Service**: Tempat logika aplikasi
 - **Module**: Mengelompokkan semua bagian fitur
-- **Provider**: Service, use case, atau logic lain yang bisa di-*inject*
+- **Provider**: Service, use case, atau logic lain yang bisa di-_inject_
 
 ---
 
@@ -104,11 +104,13 @@ npm run start:dev
 ## ✅ Validasi Data (DTO)
 
 Install:
+
 ```bash
 npm install class-validator class-transformer
 ```
 
 Contoh `create-user.dto.ts`:
+
 ```ts
 import { IsEmail, IsNotEmpty } from 'class-validator';
 
@@ -126,12 +128,14 @@ export class CreateUserDto {
 ## 🔌 Pengantar Prisma
 
 1. Install:
+
    ```bash
    npm install prisma --save-dev
    npm install @prisma/client
    ```
 
 2. Inisialisasi:
+
    ```bash
    npx prisma init
    ```
@@ -162,6 +166,7 @@ export class CreateUserDto {
 ## 🧑‍💻 Next Step?
 
 Setelah memahami dasar NestJS:
+
 - Mulailah integrasi database dengan **Prisma**
 - Pelajari penggunaan **Interceptor**, **Pipe**, **Guard**
 - Terapkan prinsip **Clean Architecture** untuk scale aplikasi
